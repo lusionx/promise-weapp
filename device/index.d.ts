@@ -1,10 +1,5 @@
 declare namespace WeApp {
     interface wx {
-        /**
-         * 判断小程序的API 回调 参数 组件等是否在当前版本可用
-         * @param param 使用${API}.${method}.${param}.${options}或者${component}.${attribute}.${option}方式来调用
-         */
-        canIUse(param: string): boolean
         /**调起客户端扫码界面 扫码成功后返回对应的结果 */
         scanCode(param: ScanCodeParam): void;
         /**监听用户主动截屏事件 用户使用系统截屏按键截屏时触发此事件 */

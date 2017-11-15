@@ -16,6 +16,18 @@ declare namespace WeApp {
         sizeType?: Array<string>;
         /**album 从相册选图 camera 使用相机 默认二者都有 */
         sourceType?: Array<string>;
+        success?: (res: ChooseImageResult) => void
+    }
+    interface ChooseImageResult extends CallbackResult {
+        /**图片的本地文件路径列表 */
+        tempFilePaths: string[]
+        /**
+         * @description 图片的本地文件路径列表
+         * @since 1.2.0 */
+        tempFiles: {
+            path: string
+            size: number
+        }
     }
     interface PreviewImageParam extends CallbackParam {
         /**当前显示图片的链接 不填则默认为 urls 的第一张 */

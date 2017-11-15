@@ -17,6 +17,11 @@ declare var wx: WeApp.wx;
 
 declare namespace WeApp {
     interface wx {
+        /**
+         * @description 判断小程序的API 回调 参数 组件等是否在当前版本可用
+         * @param param 使用${API}.${method}.${param}.${options}或者${component}.${attribute}.${option}方式来调用
+         */
+        canIUse(param: string): boolean
         /**隐藏键盘 */
         hideKeyboard(): void;
         /**将页面滚动到目标位置 单位px */
