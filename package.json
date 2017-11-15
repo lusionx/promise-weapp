@@ -1,0 +1,30 @@
+{
+  "name": "promise-weapp",
+  "version": "1.0.0",
+  "description": "将小程序api包装成成Promise形式, 可使用tslang中的await/async关键字",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lusionx/promise-weapp.git"
+  },
+  "keywords": [
+    "weapp",
+    "typescript",
+    "promise",
+    "await",
+    "async"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lusionx/promise-weapp/issues"
+  },
+  "homepage": "https://github.com/lusionx/promise-weapp#readme",
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  }
+}
