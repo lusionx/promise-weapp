@@ -6,6 +6,8 @@ promise-weapp
 `we-app.d.ts`源自https://github.com/Emeryao/typed-we-app 进行了拆分, 符合ts(v2.4)的strict检查,
 
 ## 用Promise包装需要的api
-wx.request 等需要包装,  wx.stopRecord则不需要包装
+- wx.request 等需要包装, wx.stopRecord则不需要包装
+- 包装后的由于去掉了`success, fail`, 扁平化参数 eg. `authorize(scope: WeApp.ScopeKey)`
+
 
 ## 提供util实现一些简单无依赖的工具

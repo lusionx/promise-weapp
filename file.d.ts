@@ -19,7 +19,10 @@ declare namespace WeApp {
     interface SaveFileParam extends CallbackParam {
         /**需要保存的文件的临时路径 */
         tempFilePath: string;
-        success?: (res?: { savedFilePath?: string }) => void;
+        success?: (res: SaveFileResult) => void;
+    }
+    interface SaveFileResult extends CallbackResult {
+        savedFilePath: string
     }
     interface GetFileInfoParam extends CallbackParam {
         /**本地文件路径 */
